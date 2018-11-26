@@ -15,7 +15,7 @@ linter-php は設定が必要で git からファイルとってきたりいろ�
 ・`atom-beautify` きれいなコードに変換してくれる   
 右クリックから beautify editer contents を選ぶか `Ctrl+Alt+B` でできる  
 ・`git-puls`  使わないほうがよさそう．使ったら conflict 起きた．使うにしても下のターミナル開いてコマンド打てばよさそう．用勉強  
-・`Platformio Ide Terminal`  Atom 上でターミナルを開ける．`Ctrl+Shift+``で開ける．何も設定しなかったら windows の場合デフォルトが Power Shell になっている．   
+・`Platformio Ide Terminal`  Atom 上でターミナルを開ける．`Ctrl+Shift+\\``で開ける．何も設定しなかったら windows の場合デフォルトが Power Shell になっている．   
 `cmd` にする場合，パッケージ設定の shell override に `C:\Windows\System32\cmd.exe` を記述したらコマンドプロンプトが使える．  
 `Anaconda prompt` にする場合はパッケージ設定の shell override に `C:\Windows\System32\cmd.exe` を Core に `C:\Anaconda3\Scripts\activate.bat root` を記述したらアナコンダプロンプトが使える．仮想環境を使わない場合は root を，仮想環境を指定する場合はその名前にする．
 
@@ -28,5 +28,5 @@ Atom のコマンド集．一部 Atom 以外のコマンドも使えるものは
 `Ctrl+Shift+A` 全行選択  
 `Ctrl+/` 指定された行をコメントアウト  
 `Ctrl+Shift+P` Atom コマンド表示  
-`Ctrl+Shift+`` ターミナルを開く  
+`Ctrl+Shift+\\`` ターミナルを開く  
 `Ctrl+Alt+B` コード整形    
