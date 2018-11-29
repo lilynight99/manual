@@ -1,5 +1,7 @@
 ## Atom について
 
+windows 準拠で書いてあるので注意．Linux はやり方が多少違うから他をみながらやる．
+
 ### 1. 入れるべきパッケージ
 ・`tag` html で``</``を打ち込むと勝手に補完してくれる  
 ・`japanese-menu` メニューの日本語化  
@@ -16,20 +18,23 @@ xampp の場合 `C:\xampp/php/php.exe` でいける．
 右クリックから beautify editer contents を選ぶか `Ctrl+Alt+B` でできる.  
 htmm,javascript,css などは atom-beautify をインストールするだけで使用できるが，PHP などに関しては設定が必要.  
 ● PHP の設定方法(windows)  
-1. [ここ](https://github.com/FriendsOfPHP/PHP-CS-Fixer) の Installation にある  Locally の Download the php-cs-fixer.phar file から php-cs-fixer.phar をダウンロード(いまは php-cs-fixer-v-2.phar らしい)  
-1. php-cs-fixer.phar を任意の場所にコピー．`C:\xampp\php\php-cs-fixer.phar` など
-1. atom-beautify の設定から Executables を選択し Executables 内の PHP の Binary/Script Path に PHP へのパスを入力し，PHP-CS-Fixer の Binary/Script Path に先ほどコピーした php-cs-fixer-v2.phar へのパスを入力する．  
+1. [ここ](https://github.com/FriendsOfPHP/PHP-CS-Fixer) の readme の Installation にある  Locally の Download the php-cs-fixer.phar file から php-cs-fixer.phar をダウンロード
+1. php-cs-fixer-v2.phar を任意の場所にコピー．`C:\xampp\php\php-cs-fixer-v2.phar` など
+1. atom-beautify の設定から Executables を選択し Executables 内の PHP の Binary/Script Path に PHP へのパスを入力，PHP-CS-Fixer の Binary/Script Path に先ほどコピーした php-cs-fixer-v2.phar へのパスを入力する．  
 ```
 例)
 PHP Binary/Script Path : C:\xampp\php\php.exe
-PHP-CS-Fixer Binary/Script Path : C:\xampp\php\php-cs-fixer.phar
+PHP-CS-Fixer Binary/Script Path : C:\xampp\php\php-cs-fixer-v2.phar
 ```
 
+参考リンク：[https://takumi9942.net/blog/?p=678](https://takumi9942.net/blog/?p=678)
 
-・`git-puls`  使わないほうがよさそう．使ったら conflict 起きた．使うにしても下のターミナル開いてコマンド打てばよさそう．用勉強  
+・`git-puls`  使わないほうがよさそう．使ったら conflict 起きた．使うにしても下のターミナル開いてコマンド打てばよさそう．要勉強  
 ・`Platformio Ide Terminal`  Atom 上でターミナルを開ける．``Ctrl+Shift+` ``で開ける．何も設定しなかったら windows の場合デフォルトが Power Shell になっている．   
 `cmd` にする場合，パッケージ設定の shell override に `C:\Windows\System32\cmd.exe` を記述したらコマンドプロンプトが使える．  
-`Anaconda prompt` にする場合はパッケージ設定の shell override に `C:\Windows\System32\cmd.exe` を Core に `C:\Anaconda3\Scripts\activate.bat root` を記述したらアナコンダプロンプトが使える．仮想環境を使わない場合は root を，仮想環境を指定する場合はその名前にする．
+`Anaconda prompt` にする場合はパッケージ設定の shell override に `C:\Windows\System32\cmd.exe` を Core に `C:\Anaconda3\Scripts\activate.bat root` を記述したらアナコンダプロンプトが使える．仮想環境を使わない場合は root を，仮想環境を指定する場合はその名前にする．  
+・`markdown-scroll-sync` markdown のプレビューが同期する．
+
 
 ### 2. 変えるべき setting   
 setting からタブの可視化，インデントのライン揃えをオンにしたほうがみやすい
@@ -65,10 +70,9 @@ Atom のコマンド集．一部 Atom 以外のコマンドも使えるものは
  ・その他のコマンド  
 `Ctrl+Shift+P` Atom パレット表示  
 ``Ctrl+Shift+` `` ターミナルを開く  
-`Ctrl+Alt+B` コード整形  
 `Ctrl+Shift+M` markdown プレビュー  
+`Ctrl+Alt+B` コード整形  
 `Ctrl+,` setting を開く
 
 ・ git 系コマンド  
-いろいろあるらしいがターミナルでやったほうがコミット，プッシュ，プルあたりの間違い
-がなくなるからよさそう．
+いろいろあるらしいがターミナルでやったほうがコミット，プッシュ，プルあたりの間違いがなくなるからよさそう．
